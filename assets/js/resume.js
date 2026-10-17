@@ -58,37 +58,48 @@ const content = {
       {
         date: "Январь 2025 – настоящее время",
         title: "Monomatch",
-        body: "Monomanager.com — мобильная игра в стиле «Монополия», сочетающая классическую механику настольных игр с современным UI/UX-дизайном. Работал над широким спектром задач — от рутинных исправлений до сложных архитектурных улучшений. Отвечаю за полный процесс публикации в Google Play и App Store, включая подготовку, отправку и соблюдение требований платформ. Также осуществлял постоянную поддержку, выпуск регулярных обновлений, улучшение стабильности и функционала на основе обратной связи пользователей и аналитики. Основные обязанности:",
+        role: "React Native Developer",
+        body: "Monomanager.com — мобильная «Монополия» с современным интерфейсом. Веду клиент от игровых механик и архитектуры до релиза в Google Play и App Store и поддерживаю его после выхода.",
         points: [
-          "Полный рефакторинг приложения — реструктуризация и оптимизация существующего кода для повышения читаемости, масштабируемости и производительности.",
-          "Разработка нового функционала — внедрение новых игровых механик, расширяющих возможности приложения и повышающих вовлечённость пользователей.",
-          "Исправление ошибок — обеспечение стабильности приложения за счёт выявления и устранения как поверхностных, так и глубинных проблем.",
+          "Перестроил структуру приложения: код проще развивать, сборка работает стабильнее и быстрее.",
+          "Добавлял игровые механики и расширял возможности партии.",
+          "Закрывал ошибки разной глубины и выпускал обновления по отзывам игроков и аналитике.",
         ],
         stack: ["mobx", "ws", "webrtc", "reanimated", "skia", "fcm", "navigation"],
       },
       {
         date: "Апрель 2023 – Ноябрь 2024",
         title: "EasyCode · Hitz.me",
-        body: "Разработка кроссплатформенного мобильного приложения для сервиса потокового вещания музыки Hitz.me. Занимался созданием и улучшением мобильного приложения с использованием кроссплатформенных технологий. В обязанности входили проектирование и реализация нового функционала, внедрение архитектурных улучшений и оптимизация производительности для обеспечения плавной и отзывчивой работы приложения.",
-        points: [],
+        role: "React Native Developer",
+        body: "Мобильный клиент музыкального стриминга Hitz.me. Собирал новый функционал, укреплял архитектуру и ускорял интерфейс, чтобы прослушивание оставалось плавным.",
+        points: [
+          "Проектировал и выпускал новые возможности приложения.",
+          "Улучшал архитектуру уже работающего клиента, чтобы новые функции встраивались естественно.",
+          "Оптимизировал отзывчивость экранов и переходов.",
+        ],
         stack: ["react query", "reanimated", "fcm", "navigation"],
       },
       {
         date: "Август 2022 – Октябрь 2024",
         title: "LIV Studio",
-        body: "Разрабатывал небольшие кроссплатформенные приложения на React Native — полный цикл разработки от архитектуры и дизайна интерфейсов до реализации функционала, тестирования и оптимизации. Выполнял сборку приложений для iOS и Android, готовил их к публикации в App Store и Google Play, настраивал необходимые сертификаты и разрешения. Занимался поддержкой уже опубликованных приложений, включая исправление ошибок и выпуск обновлений.",
-        points: [],
+        role: "React Native Developer",
+        body: "Небольшие кроссплатформенные приложения: от архитектуры и интерфейса до стора и поддержки.",
+        points: [
+          "Собирал приложения целиком — структура, экраны, функционал, проверка и оптимизация.",
+          "Готовил сборки iOS и Android, настраивал сертификаты и разрешения, выпускал в App Store и Google Play.",
+          "Поддерживал опубликованные продукты: исправлял ошибки и выпускал обновления.",
+        ],
         stack: ["zustand", "skia", "reanimated", "navigation"],
       },
       {
         date: "Февраль 2021 – настоящее время",
         title: "ИП · Минск",
-        body: "",
+        role: "React Native Developer",
+        body: "Приложения под ключ для iOS и Android и помощь с публикацией в сторах.",
         points: [
-          "Разработка кроссплатформенных мобильных приложений.",
-          "Опыт создания мобильных приложений разной сложности для платформ iOS и Android.",
-          "Полный цикл разработки: проектирование, программирование, отладка, тестирование и публикация в Google Play и App Store.",
-          "Выполнение сопутствующих задач, включая оптимизацию производительности, обеспечение безопасности, обновление и поддержку приложений.",
+          "Собираю мобильный продукт целиком: интерфейс, логика, отладка и рабочая сборка.",
+          "Помогаю выйти в Google Play и App Store — подготовка, требования площадок и выпуск.",
+          "После релиза остаюсь на поддержке: обновления и стабильность.",
         ],
         stack: ["state managers", "reanimated", "skia", "fcm", "navigation"],
       },
@@ -153,37 +164,48 @@ const content = {
       {
         date: "January 2025 – Present",
         title: "Monomatch",
-        body: "Monomanager.com is a mobile Monopoly-style game that combines classic board game mechanics with modern UI/UX design. I worked on a wide range of tasks — from routine fixes to complex architectural improvements. I am responsible for the full publishing process in Google Play and the App Store, including preparation, submission, and compliance with platform requirements. I also provide ongoing support, release regular updates, and work on improving stability and functionality based on user feedback and analytics.",
+        role: "React Native Developer",
+        body: "Monomanager.com is a mobile Monopoly-style game with a modern interface. I take the client from game mechanics and architecture through release on Google Play and the App Store, then support it after launch.",
         points: [
-          "Complete app refactoring — restructured and optimized the existing codebase to improve readability, scalability, and performance.",
-          "Feature development — implemented new game mechanics, expanding the app’s functionality and enhancing user engagement.",
-          "Bug fixing — ensured app stability by identifying and resolving both surface-level and deeply rooted issues.",
+          "Restructured the app so the codebase is easier to extend and the build stays faster and more stable.",
+          "Shipped new game mechanics that expand what a match can do.",
+          "Fixed issues at every layer and released updates from player feedback and analytics.",
         ],
         stack: ["mobx", "ws", "webrtc", "reanimated", "skia", "fcm", "navigation"],
       },
       {
         date: "April 2023 – November 2024",
         title: "EasyCode · Hitz.me",
-        body: "Development of a cross-platform mobile application for the Hitz.me music streaming service. Responsibilities include designing and implementing new features, introducing architectural enhancements, and optimizing performance to ensure a smooth and responsive user experience.",
-        points: [],
+        role: "React Native Developer",
+        body: "Mobile client for the Hitz.me music streaming service. I designed new features, strengthened the architecture, and tightened performance so playback stayed smooth.",
+        points: [
+          "Designed and shipped new product features.",
+          "Improved the architecture of the live client so new features fit cleanly.",
+          "Tuned how quickly screens and transitions respond.",
+        ],
         stack: ["react query", "reanimated", "fcm", "navigation"],
       },
       {
         date: "August 2022 – October 2024",
         title: "LIV Studio",
-        body: "Developed small cross-platform applications using React Native — full development cycle from architecture and UI design to functionality implementation, testing, and optimization. Built applications for both iOS and Android, prepared them for release in the App Store and Google Play, and handled the configuration of required certificates and permissions. Provided maintenance and support for published applications, including bug fixing and releasing updates.",
-        points: [],
+        role: "React Native Developer",
+        body: "Small cross-platform apps, taken from architecture and interface through the stores and ongoing support.",
+        points: [
+          "Built each app end to end: structure, screens, features, testing, and optimization.",
+          "Produced iOS and Android builds, set up certificates and permissions, and shipped to the App Store and Google Play.",
+          "Maintained published apps with bug fixes and updates.",
+        ],
         stack: ["zustand", "skia", "reanimated", "navigation"],
       },
       {
         date: "February 2021 – Present",
         title: "Self-Employed · Minsk",
-        body: "",
+        role: "React Native Developer",
+        body: "Turnkey apps for iOS and Android, plus hands-on help getting them published.",
         points: [
-          "Cross-platform mobile application development.",
-          "Experience in developing mobile applications of varying complexity for iOS and Android platforms.",
-          "Full development cycle: design, programming, debugging, testing, and publishing in Google Play and App Store.",
-          "Handling related tasks, including performance optimization, security, updating, and app maintenance.",
+          "Deliver a mobile product end to end: interface, logic, debugging, and a release build.",
+          "Help ship to Google Play and the App Store — preparation, store requirements, and release.",
+          "Stay on after launch for updates and stability.",
         ],
         stack: ["state managers", "reanimated", "skia", "fcm", "navigation", "expo"],
       },
@@ -294,6 +316,7 @@ function render() {
           <span class="job-date">${job.date}</span>
         </div>
         <h3 class="job-title">${job.title}</h3>
+        ${job.role ? `<p class="job-role">${job.role}</p>` : ""}
         ${job.body ? `<p class="job-body">${job.body}</p>` : ""}
         ${
           job.points?.length
