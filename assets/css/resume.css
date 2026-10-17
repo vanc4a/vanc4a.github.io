@@ -566,6 +566,114 @@ a {
   line-height: 1.7;
 }
 
+.projects {
+  margin-bottom: 34px;
+  animation: rise 0.9s ease 0.2s both;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface-solid) 55%, transparent);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+  background: var(--chip);
+}
+
+.project:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.project-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+  aspect-ratio: 1024 / 438;
+  object-fit: cover;
+  background: var(--chip);
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  flex: 1;
+  padding: 0 14px 16px;
+}
+
+.project-icon {
+  width: 56px;
+  height: 56px;
+  margin-top: -28px;
+  border-radius: 16px;
+  object-fit: cover;
+  background: var(--surface-solid);
+  border: 2px solid var(--surface-solid);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.project-copy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  padding-top: 12px;
+}
+
+.project-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.project-text {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  padding-top: 10px;
+  color: var(--accent-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-cta svg {
+  width: 13px;
+  height: 13px;
+}
+
 .experience {
   animation: rise 0.95s ease 0.24s both;
 }
@@ -574,6 +682,7 @@ a {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 22px;
 }
@@ -775,6 +884,10 @@ a {
   .job {
     padding-left: 30px;
   }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -821,7 +934,8 @@ a {
     background: white !important;
   }
 
-  .job:hover {
+  .job:hover,
+  .project:hover {
     transform: none;
   }
 

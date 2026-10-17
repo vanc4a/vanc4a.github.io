@@ -12,6 +12,24 @@ const content = {
     footer: "Минск · React Native · Mobile",
     about:
       "Я React Native разработчик из Минска, мне 25 лет, с общим опытом в разработке более 5 лет. Основной фокус — кроссплатформенные мобильные приложения, где я применяю современные технологии и лучшие практики. Разработка для меня — не просто работа, а увлечение, которое мотивирует постоянно учиться и создавать качественные продукты. В свободное время занимаюсь собственными проектами, стремясь реализовать интересные идеи и расширить профессиональные горизонты. Также интересуюсь технологиями умного дома и автоматизацией, что помогает мне применять навыки разработки в разных сферах и создавать комфортные решения.",
+    projectsTitle: "Личные проекты",
+    projectsNote: "Опубликованы в App Store",
+    projects: [
+      {
+        name: "Stocard",
+        text: "Кошелёк карт лояльности: сканируйте карты, храните их вместе и открывайте нужную на кассе.",
+        href: "https://apps.apple.com/by/app/stocard-loyalty-card-wallet/id6749338079",
+        icon: "/assets/projects/stocard.webp",
+        cover: "/assets/projects/stocard-cover.webp",
+      },
+      {
+        name: "MiniPrint",
+        text: "Печать фото, стикеров, заметок и этикеток на карманном принтере по Bluetooth.",
+        href: "https://apps.apple.com/by/app/miniprint-mini-printer/id6758412942",
+        icon: "/assets/projects/miniprint.webp",
+        cover: "/assets/projects/miniprint-cover.webp",
+      },
+    ],
     contacts: [
       { icon: "phone", label: "+375 44 563-31-86", href: "tel:+375445633186" },
       { icon: "email", label: "vanc4a.vanc4a@gmail.com", href: "mailto:vanc4a.vanc4a@gmail.com" },
@@ -89,6 +107,24 @@ const content = {
     footer: "Minsk · React Native · Mobile",
     about:
       "I am a React Native developer from Minsk, 25 years old, with over 5 years of overall development experience. My main focus is cross-platform mobile applications, where I apply modern technologies and best practices. Development for me is not just a job, but a passion that motivates me to continuously learn and create high-quality products. In my free time, I work on my own projects, striving to bring interesting ideas to life and expand my professional horizons. I am also interested in smart home technologies and automation, which helps me apply my development skills across different fields and create comfortable solutions.",
+    projectsTitle: "Personal projects",
+    projectsNote: "Published on the App Store",
+    projects: [
+      {
+        name: "Stocard",
+        text: "A loyalty-card wallet: scan store cards, keep them together, and open the right one at checkout.",
+        href: "https://apps.apple.com/by/app/stocard-loyalty-card-wallet/id6749338079",
+        icon: "/assets/projects/stocard.webp",
+        cover: "/assets/projects/stocard-cover.webp",
+      },
+      {
+        name: "MiniPrint",
+        text: "Print photos, stickers, notes, and labels on a pocket printer over Bluetooth.",
+        href: "https://apps.apple.com/by/app/miniprint-mini-printer/id6758412942",
+        icon: "/assets/projects/miniprint.webp",
+        cover: "/assets/projects/miniprint-cover.webp",
+      },
+    ],
     contacts: [
       { icon: "phone", label: "+375 44 563-31-86", href: "tel:+375445633186" },
       { icon: "email", label: "vanc4a.vanc4a@gmail.com", href: "mailto:vanc4a.vanc4a@gmail.com" },
@@ -182,6 +218,9 @@ const els = {
   introHeadline: document.getElementById("intro-headline"),
   employmentTitle: document.getElementById("employment-title"),
   employmentNote: document.getElementById("employment-note"),
+  projectsTitle: document.getElementById("projects-title"),
+  projectsNote: document.getElementById("projects-note"),
+  projects: document.getElementById("projects"),
   about: document.getElementById("about"),
   contacts: document.getElementById("contacts"),
   skills: document.getElementById("skills"),
@@ -206,6 +245,8 @@ function render() {
   els.introHeadline.textContent = data.introHeadline;
   els.employmentTitle.textContent = data.employmentTitle;
   els.employmentNote.textContent = data.employmentNote;
+  els.projectsTitle.textContent = data.projectsTitle;
+  els.projectsNote.textContent = data.projectsNote;
   els.about.textContent = data.about;
   els.footer.textContent = data.footer;
   els.pageTitle.textContent = `${data.name} · CV`;
@@ -221,6 +262,29 @@ function render() {
     .join("");
 
   els.skills.innerHTML = data.skills.map((skill) => `<span class="skill">${skill}</span>`).join("");
+
+  els.projects.innerHTML = data.projects
+    .map(
+      (project) => `
+      <a class="project" href="${project.href}" target="_blank" rel="noopener noreferrer">
+        <img class="project-cover" src="${project.cover}" alt="" width="1024" height="438" />
+        <span class="project-body">
+          <img class="project-icon" src="${project.icon}" alt="" width="56" height="56" />
+          <span class="project-copy">
+            <h3 class="project-name">${project.name}</h3>
+            <span class="project-text">${project.text}</span>
+            <span class="project-cta">
+              App Store
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M9 7h8v8" />
+              </svg>
+            </span>
+          </span>
+        </span>
+      </a>`
+    )
+    .join("");
 
   els.jobs.innerHTML = data.jobs
     .map(
